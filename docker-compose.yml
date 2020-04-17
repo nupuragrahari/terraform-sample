@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  learn-terraform-aws-instance:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+    image: 178243065943.dkr.ecr.us-east-1.amazonaws.com/sample_container
